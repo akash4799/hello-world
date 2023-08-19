@@ -3,72 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beautiful HTML Page</title>
+    <title>DevOps Learning Registration</title>
     <style>
-        /* Add your CSS styles here */
+        /* Global Styles */
         body {
             font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
             margin: 0;
             padding: 0;
-            background-color: #f2f2f2;
         }
 
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-
-        nav {
-            background-color: #444;
-            text-align: center;
-        }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin: 0 20px;
-        }
-
-        main {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
+        /* Container Styles */
+        .container {
             background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            text-align: center;
         }
 
-        footer {
-            background-color: #333;
-            color: #fff;
+        /* Header Styles */
+        .container h1 {
+            color: #333;
+        }
+
+        /* Input Styles */
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            border-radius: 3px;
+        }
+
+        /* Button Styles */
+        .registerbtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        /* Button Hover Effect */
+        .registerbtn:hover {
+            background-color: #45a049;
+        }
+
+        /* Sign in Link Styles */
+        .container a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        .container a:hover {
+            text-decoration: underline;
+        }
+
+        /* Thank You Message Styles */
+        .thank-you {
             text-align: center;
-            padding: 10px;
+            margin-top: 20px;
+            color: #4CAF50;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Beautiful Page</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-    <main>
-        <h2>Main Content</h2>
-        <p>This is where you can place your main content.</p>
-    </main>
-    <footer>
-        &copy; 2023 Beautiful HTML Page
-    </footer>
+    <form action="action_page.php">
+        <div class="container">
+            <h1>New User Registration for DevOps Learning</h1>
+            <p>Please fill in this form to create an account.</p>
+            <hr>
+             
+            <label for="Name"><b>Enter Name</b></label>
+            <input type="text" placeholder="Enter Full Name" name="Name" id="Name" required>
+            
+            <label for="mobile"><b>Enter Mobile</b></label>
+            <input type="text" placeholder="Enter Mobile Number" name="mobile" id="mobile" required>
+
+            <label for="email"><b>Enter Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+            <label for="psw-repeat"><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+            
+            <hr>
+            
+            <p>By creating an account, you agree to our <a href="#">Terms & Privacy</a>.</p>
+            
+            <button type="submit" class="registerbtn">Register</button>
+        </div>
+        <div class="container signin">
+            <p>Already have an account? <a href="#">Sign in</a>.</p>
+        </div>
+    </form>
+
+    <div class="thank-you">
+        <h1>Thank You, Happy Learning</h1>
+    </div>
 </body>
 </html>
