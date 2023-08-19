@@ -8,7 +8,7 @@
         /* Global Styles */
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #FF5252, #FFD740);
+            background-color: #f7f7f7;
             margin: 0;
             padding: 0;
             display: flex;
@@ -19,12 +19,12 @@
 
         /* Container Styles */
         .container {
-            background-color: rgba(255, 255, 255, 0.9);
+            background-color: #fff;
             max-width: 400px;
             padding: 30px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-            border-radius: 10px;
-            text-align: left; /* Align text to the left */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            text-align: center;
         }
 
         /* Header Styles */
@@ -32,7 +32,6 @@
             color: #E91E63;
             font-size: 28px;
             margin-bottom: 20px;
-            text-align: center; /* Center-align header text */
         }
 
         /* Input Styles */
@@ -43,9 +42,9 @@
             margin: 8px 0;
             border: none;
             border-bottom: 2px solid #E91E63;
-            background-color: rgba(255, 255, 255, 0.7);
+            background-color: #f7f7f7;
             font-size: 16px;
-            border-radius: 5px;
+            border-radius: 0;
             color: #E91E63;
         }
 
@@ -63,7 +62,7 @@
             padding: 14px 20px;
             margin-top: 20px;
             border: none;
-            border-radius: 5px;
+            border-radius: 3px;
             font-size: 18px;
             cursor: pointer;
         }
