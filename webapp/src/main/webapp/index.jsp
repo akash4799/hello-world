@@ -8,7 +8,7 @@
         /* Global Styles */
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #FF5252, #FFD740); /* Gradient background */
+            background: linear-gradient(to right, #FF5252, #FFD740);
             margin: 0;
             padding: 0;
             display: flex;
@@ -19,12 +19,12 @@
 
         /* Container Styles */
         .container {
-            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+            background-color: rgba(255, 255, 255, 0.9);
             max-width: 400px;
             padding: 30px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
             border-radius: 10px;
-            text-align: center;
+            text-align: left; /* Align text to the left */
         }
 
         /* Header Styles */
@@ -32,6 +32,7 @@
             color: #E91E63;
             font-size: 28px;
             margin-bottom: 20px;
+            text-align: center; /* Center-align header text */
         }
 
         /* Input Styles */
@@ -42,7 +43,7 @@
             margin: 8px 0;
             border: none;
             border-bottom: 2px solid #E91E63;
-            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white input background */
+            background-color: rgba(255, 255, 255, 0.7);
             font-size: 16px;
             border-radius: 5px;
             color: #E91E63;
